@@ -1,0 +1,20 @@
+:root{
+    --primary-bg: rgb(24,41,51);
+    --tile-bg: rgb(29,53,65);
+}
+body{
+    margin: 0;
+    background-color: var(--primary-bg);
+}
+.grids{
+    display: flex;
+    background-color: var(--tile-bg);
+   align-items: center;
+   justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows: repeat(3,150px);
+    gap: 10px;
+}
