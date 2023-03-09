@@ -6,22 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/plumbing" rel="stylesheet">
     <script src="./script.js" defer></script>
 </head>
 <body>
+    <main>
+    <header class="container-header">
+        <div style="display: flex; gap: 10px;">
+    <div class="x-style">X</div>
+    <div class="o-style">O</div>
+</div>
+<div class="turn-display" style="display:flex; gap: 15px;" >
+    <div class="turn x-style">X</div>
+    <div>turn</div></div>
+    <button class="playagain" onclick="location.reload()">↺</button>
+    </header>
     <div class="container">
-        <div class="grids"></div>
-        <div class="grids"></div>
-        <div class="grids"></div>
-        <div class="grids"></div>
-        <div class="grids"></div>
-        <div class="grids"></div>
-        <div class="grids"></div>
-        <div class="grids"></div>
-        <div class="grids"></div>
+        
+        <div class="grids "></div>
+        <div class="grids "></div>
+        <div class="grids "></div>
+        <div class="grids "></div>
+        <div class="grids "></div>
+        <div class="grids "></div>
+        <div class="grids "></div>
+        <div class="grids "></div>
+        <div class="grids "></div>
     </div>
-   <div>Player1</div>
-   <div>Player2</div>
-   
+   <footer class="container-footer">
+    
+  
+   </footer>
+   </main>
+
+
+   <div class="winning-display">
+    <div class="winning-message" style="display:flex; gap: 25px; color: rgb(166, 190, 202);" >
+        <div class="turn">X</div>
+        <div class="wins-div">WINS</div></div>
+    <button class="restart" onclick="location.reload()">Play Again?</button>
+   </div>
 </body>
 </html>

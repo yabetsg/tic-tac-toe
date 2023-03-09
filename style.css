@@ -1,20 +1,99 @@
 :root{
     --primary-bg: rgb(24,41,51);
     --tile-bg: rgb(29,53,65);
+    --ff-x-o:'PLUMBING', sans-serif;
+    --x-color: rgb(0,209,195);
+    --o-color: rgb(248,183,14);
+    --btn-color:rgb(166, 190, 202);
+}
+main{
+    width: 470px;
+    justify-content: center;
+    gap: 15px;
 }
 body{
     margin: 0;
     background-color: var(--primary-bg);
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer{
+    display: flex;
 }
 .grids{
     display: flex;
     background-color: var(--tile-bg);
    align-items: center;
    justify-content: center;
+   border-radius: 10px;
+   box-shadow: 0px 5px 0px rgba(20,23,25,.77);
+
 }
 .container{
     display: grid;
     grid-template-columns: repeat(3,150px);
     grid-template-rows: repeat(3,150px);
-    gap: 10px;
+    gap: 15px;
+    font-size: 4.8rem;
+}
+.x-style{
+    font-family: var(--ff-x-o);
+    font-weight: 800;
+    color: var(--x-color);
+}
+.o-style{
+    font-family: var(--ff-x-o);
+    font-weight: 800;
+    color: var(--o-color);
+}
+.turn-display{
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    padding: 9px;
+    color: white;
+    background-color: var(--tile-bg);
+    font-family: var(--ff-x-o);
+    box-shadow: 0px 3px 0px rgba(20,23,25,.77);
+}
+
+.winning-display{
+    display: none; 
+     background-color: rgba(24,41,51,.77);
+     font-family: var(--ff-x-o);
+     font-size: 3.8rem;
+     flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom:-290px;
+    justify-content:center;
+    align-items: center;
+
+    transition: 0.5s ease-in-out;
+}
+.winning-display.show{
+  display: flex;
+ 
+}
+button{
+  
+    font-family: var(--ff-x-o);
+    font-size: 1.5rem;
+    background-color: var(--btn-color);
+    border-color:  var(--btn-color);  
+    border-style: none;
+    border-radius: 7px;
+    box-shadow: 0px 5px 0px rgba(20,23,25,.77);
 }
